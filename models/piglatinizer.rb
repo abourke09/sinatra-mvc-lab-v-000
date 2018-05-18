@@ -10,11 +10,7 @@ class PigLatinizer
       consonants = alphabet - vowels
 
       if vowels.include?(word[0])
-      #  if word.length == 1
-          translated_array << (word + 'way')
-      #  else
-      #    translated_array << (word + 'ay')
-      #  end
+        translated_array << (word + 'way')
       elsif consonants.include?(word[0]) && consonants.include?(word[1]) && consonants.include?(word[2])
         translated_array << (word[3..-1] + word[0..2] + 'ay')
       elsif consonants.include?(word[0]) && consonants.include?(word[1])
