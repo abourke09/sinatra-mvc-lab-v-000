@@ -5,7 +5,7 @@ class PigLatinizer
     translated_array = []
 
     text_array.each do |word|
-      alphabet = ('a'..'z').to_a
+      alphabet = ('a'..'z').to_a + ('A'..'Z').to_a
       vowels = ["a", "e", "i", "o", "u", "A", "I", "E", "O", "U"]
       consonants = alphabet - vowels
 
