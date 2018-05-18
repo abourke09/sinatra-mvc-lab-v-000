@@ -1,6 +1,6 @@
 class PigLatinizer
 
-  def translate(text)
+  def piglatinize(text)
     text_array = text.split(" ").to_a
     translated_array = []
 
