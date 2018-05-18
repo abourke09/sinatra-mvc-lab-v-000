@@ -17,6 +17,8 @@ class PigLatinizer
       #  end
       elsif consonants.include?(word[0]) && consonants.include?(word[1])
         translated_array << (word[2..-1] + word[0..1] + 'ay')
+      elsif consonants.include?(word[0]) && consonants.include?(word[1])
+        translated_array << (word[2..-1] + word[0..1] + 'ay')
       elsif consonants.include?(word[0])
         translated_array << (word[1..-1] + word[0] + 'ay')
       else
