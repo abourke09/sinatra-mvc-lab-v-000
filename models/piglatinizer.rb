@@ -6,7 +6,7 @@ class PigLatinizer
 
     text_array.each do |word|
       alphabet = ('a'..'z').to_a
-      vowels = ["a", "e", "i", "o", "u"]
+      vowels = ["a", "e", "i", "o", "u", "A", "I"]
       consonants = alphabet - vowels
 
       if vowels.include?(word[0])
