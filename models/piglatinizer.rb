@@ -1,11 +1,6 @@
 class PigLatinize
-  attr_reader :text
 
-  def initialize(text)
-    @text = text.downcase
-  end
-
-  def translate
+  def translate(text)
     text_array = text.split(" ").to_a
     translated_array = []
 
