@@ -1,4 +1,4 @@
-class PigLatinizer
+class PigLatinize
   attr_reader :text
 
   def initialize(text)
