@@ -21,5 +21,4 @@ class PigLatinize
     end
       translated_array.join(" ")
   end
-binding.pry
 end
